@@ -19,6 +19,11 @@ export const CardPanelContentStyled = styled(CardContent)`
   display: flex;
   justify-content: space-between;
   padding: 25px;
+
+  @media(max-width: 385px){
+      flex-direction: column;
+      gap: 1rem;
+  }
 `;
 
 export const Menuitem = styled(MenuItem)`
@@ -34,4 +39,10 @@ export const ItemStyled = styled.div`
   img {
       margin-left: 10px;
   }
+`;
+
+export const PanelControl = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
